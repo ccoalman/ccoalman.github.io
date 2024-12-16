@@ -13,6 +13,16 @@ window.onload = function() {
   fetchLatestEpisodes();
 }
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }, function(error) {
+      console.log('Service Worker registration failed:', error);
+    });
+  });
+}  
+
 async function searchTvShows() {
   document.getElementById("main").innerHTML = "";
   document.getElementById("episodes-list").innerHTML = ""; 
@@ -151,7 +161,7 @@ async function epInfo(id) {
 
 async function fetchLatestEpisodes() {
   try {
-    const response = await fetch('https://api.tvmaze.com/schedule');
+    const response = await fetch('http://api.tvmaze.com/schedule');
     const episodes = await response.json();
     if (episodes.length > 0) {
       document.getElementById("latest-episodes").style.display = "block";
