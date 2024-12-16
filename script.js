@@ -13,16 +13,6 @@ window.onload = function() {
   fetchLatestEpisodes();
 }
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }, function(error) {
-      console.log('Service Worker registration failed:', error);
-    });
-  });
-}  
-
 async function searchTvShows() {
   document.getElementById("main").innerHTML = "";
   document.getElementById("episodes-list").innerHTML = ""; 
@@ -183,3 +173,13 @@ async function fetchLatestEpisodes() {
     console.error('Failed to fetch latest episodes:', error);
   }
 }
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }, function(error) {
+      console.log('Service Worker registration failed:', error);
+    });
+  });
+}  
