@@ -1,0 +1,181 @@
+.showtitle {
+  font-size: 2em;
+  color: #772796;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: #eeeeee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.5em;
+  color: #333;
+  margin-left: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search {
+  width: 300px;
+}
+
+#button {
+  width: 50px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #10a1e4;
+}
+
+button.search-bar {
+  background-color: #10a1e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+button.search-bar:hover {
+  background-color: #000000;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+#message {
+  width: 40%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.753);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#episodes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.episode {
+  display: flex;
+  align-items: center; 
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.episode img {
+  width: 120px; 
+  height: auto;
+  border-radius: 4px;
+  margin-right: 15px; 
+}
+
+.episode h3, .episode p {
+  margin: 0;
+  padding: 0;
+}
+
+.episode div {
+  flex-grow: 1;
+}
+
+.episode h3 {
+  font-size: 1.2em;
+  color: #0056b3; 
+}
+
+.episode p {
+  font-size: 0.9em; 
+  color: #666;
+  margin-left: 20px;
+}
+
+.show-detail {
+  display: flex;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.show-image {
+  width: auto;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.show-content {
+  flex-grow: 1;
+}
+
+.show-title {
+  font-size: 2.5em;
+  color: #f0f0f0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.rate-value {
+  margin-right: 10px;
+}
+
+.release-date, .show-description {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+a{
+  color: rgb(36, 120, 237);
+}
