@@ -1,7 +1,7 @@
 {
     "short_name": "TVMaze",
     "name": "TV Maze App",
-    "start_url": "ccoalman.github.io/",
+    "start_url": "/",
     "scope": "/",
     "display": "standalone",
     "background_color": "#ffffff",
