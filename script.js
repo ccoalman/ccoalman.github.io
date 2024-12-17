@@ -161,7 +161,7 @@ async function epInfo(id) {
 
 async function fetchLatestEpisodes() {
   try {
-    const response = await fetch('http://api.tvmaze.com/schedule');
+    const response = await fetch('https://api.tvmaze.com/schedule');
     const episodes = await response.json();
     if (episodes.length > 0) {
       document.getElementById("latest-episodes").style.display = "block";
