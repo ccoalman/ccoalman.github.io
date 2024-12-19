@@ -180,8 +180,8 @@ a{
   color: rgb(36, 120, 237);
 }
 
-img{
+.episode img{
   max-width: 100%;
-  height: auto;
-  width: auto;
+  height: 169px;
+  width: 120px;
 }
