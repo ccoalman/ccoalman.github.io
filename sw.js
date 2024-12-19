@@ -5,10 +5,9 @@ const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v1';
 // Files to cache during install
 const STATIC_ASSETS = [
   '/', 
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/favicon.ico',
+  'index.html',
+  'style.css',
+  'script.js'
   // Add other static files you want to cache
 ];
 
