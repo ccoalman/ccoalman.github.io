@@ -1,6 +1,6 @@
 // Define cache names
-const CACHE_NAME = 'my-app-cache-v1';
-const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v1';
+const CACHE_NAME = 'my-app-cache-v2';
+const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v2';
 
 // Files to cache during install
 const STATIC_ASSETS = [
